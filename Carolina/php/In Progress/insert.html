@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script type="text/javascript" src="js/AddRecord.js"></script>
+<title>Multiple Insert</title>
+</head>
+<body>
+<table>
+<tr id="main"><td>Enter number of records:</td>
+<td><input type="text" id="numRec" /></td>
+
+<td>
+Select table: <select id="tableSelect">
+<option value="-" selected="selected">-</option>
+<option value="use">Add User</option>
+<option value="prod">Add Products</option>
+<option value="vend">Add Vendor</option>
+<option value="sale">Record Sale</option>
+<option value="saleo">Record Order</option>
+</select>
+<button id="SubmitBt" onclick="addFields()">Add records</button>
+</td></tr>
+
+
+<tr><td id="insertFields">
+<!-- 
+input for insert is displayed here
+
+-->
+
+</td></tr>
+<tr><td>
+<div id="status">
+</div>
+
+
+<!--
+insert query and table showing record of inserts is displayed here
+
+-->
+
+</td></tr>
+</table>
+
+
+</body>
+</html>
